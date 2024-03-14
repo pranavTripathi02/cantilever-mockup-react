@@ -47,34 +47,34 @@ function TransHist() {
   ];
   return (
     <div className="shadow-xl rounded-2xl px-4 py-4">
-      <h3 className="font-bold text-2xl">Transaction History</h3>
-      <table className="w-full text-left my-4 py-4 p-8">
-        <tr className="opacity-50 p-8">
+      <h3 className="font-bold text-xl">Transaction History</h3>
+      <table className="w-full text-left my-2 py-2">
+        <tr className="opacity-50">
           <th
-            className="font-normal py-4"
+            className="font-normal"
             colSpan={2}
           >
             Receiver
           </th>
-          <th className="font-normal py-4">Type</th>
-          <th className="font-normal py-4">Date</th>
-          <th className="font-normal py-4 text-right">Amount</th>
+          <th className="font-normal ">Type</th>
+          <th className="font-normal ">Date</th>
+          <th className="font-normal  text-right">Amount</th>
         </tr>
         {data &&
           data.map((rowData) => (
-            <tr className="border-b">
-              <th className="font-normal py-4 flex gap-2">
+            <tr className="border-b h-fit">
+              <th className="font-normal text-sm py-2 flex gap-2">
                 <CartSVG className="rounded-md bg-black/10 p-1 text-black/50" />
                 {rowData.receiver}
               </th>
               <th
-                className="font-normal py-4 opacity-50"
+                className="font-normal text-sm opacity-50"
                 colSpan={2}
               >
                 {rowData.type}
               </th>
-              <th className="font-normal py-4 opacity-50">{rowData.date}</th>
-              <th className="py-4 text-right">${rowData.amount}</th>
+              <th className="font-normal opacity-50 text-sm">{rowData.date}</th>
+              <th className="text-right text-sm">${rowData.amount}</th>
             </tr>
           ))}
       </table>

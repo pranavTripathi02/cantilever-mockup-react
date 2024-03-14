@@ -1,4 +1,4 @@
-import FCardSVG from "../assets/2606579_5915.svg?react";
+import CCSVG from "../assets/cc.svg?react";
 import ChevRSVG from "../assets/chevRight.svg?react";
 import ChevLSVG from "../assets/chevLeft.svg?react";
 
@@ -18,24 +18,14 @@ function Cards() {
   // todo card deactivate
   return (
     <div className="shadow-xl rounded-2xl px-4 pt-8">
-      <h3 className="font-bold text-2xl mb-4">Cards</h3>
+      <h3 className="font-bold text-xl mb-4">Cards</h3>
       {/* card */}
       <div className="flex gap-8 justify-between pb-4">
-        <div className="border-r w-2/3">
-          <div className="w-full relative">
-            <ChevLSVG className="absolute scale-150 z-10 stroke-primary bottom-0 top-0 left-0 my-auto" />
-            <FCardSVG className="none-transparent" />
-            <ChevRSVG className="absolute z-10 scale-150 stroke-primary bottom-0 top-0 right-0 my-auto" />
-          </div>
-          {/* attribution */}
-          <div className="text-xs opacity-0 text-right fixed">
-            <a
-              className="text-xs"
-              href="https://www.freepik.com/free-vector/illustration-credit-card-icon_2606579.htm#query=credit%20card%20svg&position=1&from_view=keyword&track=ais&uuid=606103fe-65d1-4873-b59f-0ac2822579e0"
-            >
-              Image by rawpixel.com
-            </a>
-            on Freepik
+        <div className="border-r">
+          <div className="flex relative flex-center">
+            <ChevLSVG className="absolute scale-150 z-10 stroke-primary bottom-8 top-0 left-0 my-auto" />
+            <CCSVG />
+            <ChevRSVG className="absolute z-10 scale-150 stroke-primary bottom-8 top-0 right-0 my-auto" />
           </div>
           {/* progress bar */}
           <div className="flex flex-col gap-1 justify-center px-8 w-full text-sm">
