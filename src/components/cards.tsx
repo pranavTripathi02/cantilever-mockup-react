@@ -22,9 +22,9 @@ function Cards() {
       {/* card */}
       <div className="flex gap-8 justify-between pb-4">
         <div className="border-r w-2/3">
-          <div className="w-[400px] h-[250px] relative">
+          <div className="w-full relative">
             <ChevLSVG className="absolute scale-150 z-10 stroke-primary bottom-0 top-0 left-0 my-auto" />
-            <FCardSVG className="none-transparent" />
+            <FCardSVG className="border-2 none-transparent" />
             <ChevRSVG className="absolute z-10 scale-150 stroke-primary bottom-0 top-0 right-0 my-auto" />
           </div>
           {/* attribution */}
@@ -38,7 +38,7 @@ function Cards() {
             on Freepik
           </div>
           {/* progress bar */}
-          <div className="flex flex-col gap-1 justify-center px-8 w-[400px] text-sm">
+          <div className="flex flex-col gap-1 justify-center px-8 w-full text-sm">
             <progress
               className="rounded-full h-2.5 [&::-webkit-progress-bar]:rounded-full [&::-webkit-progress-value]:rounded-full [&::-webkit-progress-bar]:bg-slate-300 [&::-webkit-progress-value]:bg-primary [&::-moz-progress-bar]:bg-primary w-full"
               value={30}

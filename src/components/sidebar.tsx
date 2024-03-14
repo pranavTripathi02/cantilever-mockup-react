@@ -22,7 +22,7 @@ function Sidebar() {
         <h2 className="text-2xl font-bold">cloudcash</h2>
       </div>
       <div className="flex flex-col space-y-2 capitalize w-4/5 mb-20 items-start">
-        <div className="flex gap-4 cursor-pointer text-primary bg-primary/20 w-full rounded px-4 py-2 font-bold">
+        <div className="flex gap-4 cursor-pointer text-primary bg-primary/10 w-full rounded px-4 py-2 font-bold">
           <TrendingUpSVG />
           <span>overview</span>
         </div>
