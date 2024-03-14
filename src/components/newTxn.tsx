@@ -35,7 +35,7 @@ function NewTxn() {
         <div className="py-2 flex justify-evenly gap-4 overflow-x-auto">
           {users &&
             users.map((user) => (
-              <div className="flex flex-col gap-1">
+              <button className="flex flex-col gap-1">
                 {/* <div dangerouslySetInnerHTML={{ __html: user.userIcon }} /> */}
                 <img
                   src={User}
@@ -45,16 +45,16 @@ function NewTxn() {
                   className="bg-yellow-500 opacity-70 rounded-full"
                 />
                 <div className="self-center">{user.user}</div>
-              </div>
+              </button>
             ))}
           <div className="flex flex-col gap-1 justify-between">
-            <div className="self-center my-auto">
+            <button className="self-center my-auto">
               <PlusSVG
-                className="rounded-full bg-yellow-500 p-[1px] stroke-black justify-self-center"
+                className="rounded-full bg-yellow-500 p-[1px] justify-self-center"
                 height={24}
                 width={24}
               />
-            </div>
+            </button>
             <div className="self-center">Add new</div>
           </div>
         </div>
@@ -64,7 +64,7 @@ function NewTxn() {
             className="p-2 rounded-xl outline outline-1 outline-primary"
             placeholder="0"
           />
-          <button className="flex px-2 items-center rounded-xl bg-yellow-500">
+          <button className="flex px-2 items-center rounded-xl bg-yellow-500 justify-center">
             <span>Send the transfer</span>
             <ChevRightSVG height={14} />
           </button>

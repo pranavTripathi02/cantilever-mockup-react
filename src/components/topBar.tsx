@@ -16,7 +16,7 @@ function TopBar() {
         <AlertSVG className="stroke-1 fill-black/50 stroke-none opacity-50" />
         <div className="flex items-center gap-2 text-sm">
           <UserSVG
-            className="text-black bg-yellow-500/80 stroke-white/50 rounded-full px-1 m-0 "
+            className="bg-yellow-500/80 stroke-white/50 rounded-full px-1 m-0 "
             height={40}
             width={40}
           />

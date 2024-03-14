@@ -9,7 +9,7 @@ import TransHist from "./transHist";
 function Dashboard() {
   return (
     <div className="w-full gap-4 grid 2xl:grid-cols-[1.25fr_1fr]">
-      <div className="">
+      <div className="gap-8">
         <Cards />
         <TransHist />
       </div>
