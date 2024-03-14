@@ -32,7 +32,7 @@ function NewTxn() {
     <div className="shadow-xl rounded-2xl px-4 py-4 w-[340px] 2xl:w-auto">
       <h3 className="text-xl font-bold">New Transaction</h3>
       <div className="flex flex-col gap-4">
-        <div className="py-2 flex justify-evenly gap-4 overflow-x-auto">
+        <div className="py-2 flex justify-evenly gap-2 overflow-x-auto">
           {users &&
             users.map((user) => (
               <button
@@ -42,10 +42,10 @@ function NewTxn() {
                 {/* <div dangerouslySetInnerHTML={{ __html: user.userIcon }} /> */}
                 <img
                   src={user.userIcon}
-                  alt="mia"
+                  alt={user.user}
                   height={42}
                   width={42}
-                  className="rounded-full object-cover w-[42px] h-[42px]"
+                  className="rounded-full object-cover opacity-80 max-w-[42px] max-h-[42px]"
                 />
                 <div className="self-center text-xs">{user.user}</div>
               </button>
