@@ -24,7 +24,7 @@ function Cards() {
         <div className="border-r w-2/3">
           <div className="w-full relative">
             <ChevLSVG className="absolute scale-150 z-10 stroke-primary bottom-0 top-0 left-0 my-auto" />
-            <FCardSVG className="border-2 none-transparent" />
+            <FCardSVG className="none-transparent" />
             <ChevRSVG className="absolute z-10 scale-150 stroke-primary bottom-0 top-0 right-0 my-auto" />
           </div>
           {/* attribution */}
