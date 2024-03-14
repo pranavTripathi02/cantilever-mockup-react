@@ -6,9 +6,9 @@ import TopBar from "./components/topBar";
 function App() {
   return (
     <>
-      <div className="flex w-full">
+      <div className="flex w-full h-full border-2 pb-12">
         <Sidebar />
-        <div className="flex w-full flex-col px-8">
+        <div className="flex md:ms-80 w-full flex-col px-8">
           <TopBar />
           <div className="grid">
             <Dashboard />

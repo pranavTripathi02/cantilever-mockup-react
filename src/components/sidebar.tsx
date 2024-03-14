@@ -10,7 +10,7 @@ import CloudUploadSVG from "../assets/cloudUpload.svg?react";
 
 function Sidebar() {
   return (
-    <aside className="hidden md:w-80 h-screen md:flex flex-col justify-between border-r py-16 items-center px-2 ">
+    <aside className="hidden md:w-80 fixed h-full top-0 left-0 md:flex flex-col justify-between border-r py-16 items-center px-2 ">
       <div className="flex w-full justify-start items-center gap-2 px-5">
         <div className="w-12 h-12">
           <CloudSVG

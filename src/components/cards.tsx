@@ -17,7 +17,7 @@ function Cards() {
   };
   // todo card deactivate
   return (
-    <div className="shadow-xl rounded-2xl px-4 py-4">
+    <div className="shadow-xl rounded-2xl px-4 pt-8">
       <h3 className="font-bold text-2xl mb-4">Cards</h3>
       {/* card */}
       <div className="flex gap-8 justify-between pb-4">
